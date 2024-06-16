@@ -1,0 +1,32 @@
+%buttons {
+	padding: 10px 25px;
+	border-radius: 20px;
+	border: none;
+	color: snow;
+	background-color: black;
+	font-family: $main-font-bold;
+	letter-spacing: 2px;
+
+		&:hover {
+			opacity: .8;
+		}
+}
+
+%links {
+	text-decoration: none;
+	position: relative;	
+
+	&:hover::after {
+		width: 100%;
+	}
+	&::after {
+		width: 0;
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 1px;
+		background-color: black;
+		transition: .3s;
+	}
+}
